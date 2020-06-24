@@ -1,0 +1,11 @@
+{
+  "name": "mahesh.github.io",
+  "version": "1.0.0",
+  "description": "My Personal Website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w ./scss/ -o ./dist/css/ --recurisve"
+  },
+  "author": "Mahesh Bharadwaj K",
+  "license": "MIT"
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://kit.fontawesome.com/630ab55cd3.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<title>My Portfolio</title>
+</head>
+
+<body>
+	<header>
+		<div class="menu-btn">
+			<i class="fas fa-bars fa-2x"></i>
+		</div>
+		<nav class="menu">
+			<div class="menu-branding">
+				<div class="portrait"></div>
+			</div>
+			<ul class="menu-nav">
+				<li class="nav-item current">
+					<a href="index.html" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="about.html" class="nav-link">About Me</a>
+				</li>
+				<li class="nav-item">
+					<a href="projects.html" class="nav-link">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a href="contact.html" class="nav-link">How to Reach Me</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<main id="home">
+		<div id="particles-js-canvas-el">
+			<h1 class="lg-heading">Mahesh <span class="text-secondary">Bharadwaj K</span></h1>
+			<h2 class="sm-heading">Machine Learning | Computer Vision</h2>
+			<div class="icons">
+				<a href="#!"><i class="fab fa-twitter fa-2x"></i></a>
+				<a href="https://github.com/MaheshBharadwaj"><i class="fab fa-github fa-2x"></i></a>
+				<a href="mailto:maheshbharadwaj101@gmail.com"><i class="fas fa-envelope fa-2x"></i></a>
+			</div>
+		</div>
+	</main>
+	<script src="js/main.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+	<script>
+		particlesJS.load('particles-js-canvas-el', '../particle/particles.json', function () {
+			console.log('\"callback - particles.js config loaded!\"');
+		});
+	</script>
+</body>
+
+</html>
