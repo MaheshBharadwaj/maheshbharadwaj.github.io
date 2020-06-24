@@ -41,3 +41,13 @@ $secondary-color: #eece1a;
        @content; 
     }
 }
+
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
