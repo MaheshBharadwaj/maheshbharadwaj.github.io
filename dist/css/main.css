@@ -1,3 +1,9 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0); } }
+
 .about-info {
   display: grid;
   grid-gap: 30px;
@@ -14,10 +20,13 @@
     grid-area: bio;
     font-size: 1.5rem; }
   .about-info .job-1 {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
     grid-area: job1; }
   .about-info .job-2 {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
     grid-area: job2; }
   .about-info .job-3 {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
     grid-area: job3; }
   .about-info .job {
     border-radius: 6px;
@@ -137,6 +146,7 @@ h1, h2, h3 {
   h1.lg-heading, h2.lg-heading, h3.lg-heading {
     font-size: 6rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    font-size: 3rem;
     margin-bottom: 2rem;
     padding: 0.2rem 1rem;
     background: #494949; }
