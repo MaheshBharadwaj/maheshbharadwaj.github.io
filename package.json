@@ -7,5 +7,8 @@
     "sass": "node-sass -w ./scss/ -o ./dist/css/ --recurisve"
   },
   "author": "Mahesh Bharadwaj K",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
 }
