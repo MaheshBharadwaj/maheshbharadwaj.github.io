@@ -178,18 +178,7 @@
   height: 0;
   width: 0;
   border: 7px solid transparent;
-  border-right: 7px solid #333C42; }
-
-@media only screen and (min-width: 768px) {
-  .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem; }
-  .cd-timeline-content p {
-    font-size: 16px;
-    font-size: 1rem; }
-  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
-    font-size: 14px;
-    font-size: 0.875rem; } }
+  border-right: 7px solid #2b2b2b; }
 
 .menu-btn {
   position: absolute;
@@ -267,6 +256,59 @@
 
 .nav-item:nth-child(4) {
   transition-delay: 0.6s; }
+
+.container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center; }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px; }
+
+.contact-method {
+  width: 350px;
+  height: 140px;
+  display: inline-block;
+  background: #e2b808;
+  margin: 1rem;
+  color: white;
+  position: relative;
+  cursor: pointer; }
+  .contact-method i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    line-height: 140px;
+    z-index: 1;
+    transition: transform 0.6s;
+    background-color: #111111;
+    background-image: linear-gradient(147deg, #111111 0%, #222 74%); }
+  .contact-method span {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 700; }
+  .contact-method:hover i {
+    transform: translateY(-40px); }
 
 * {
   box-sizing: border-box; }
@@ -380,6 +422,17 @@ main {
     right: 122%;
     text-align: right; } }
 
+@media screen and (min-width: 769px) and (max-width: 1170) {
+  .cd-timeline-content h2 {
+    font-size: 20px;
+    font-size: 1.25rem; }
+  .cd-timeline-content p {
+    font-size: 16px;
+    font-size: 1rem; }
+  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+    font-size: 14px;
+    font-size: 0.875rem; } }
+
 @media screen and (max-width: 768px) {
   main {
     padding: 20px;
@@ -412,7 +465,9 @@ main {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
   #main-footer {
-    display: none; } }
+    display: none; }
+  .container {
+    flex-direction: column; } }
 
 @media screen and (max-width: 500px) {
   .timeline-content-info-title, .timeline-content-info-date {
