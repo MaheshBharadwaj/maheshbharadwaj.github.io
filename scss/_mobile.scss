@@ -1,6 +1,75 @@
 //Wide
 @include mediaXl{
+    #cd-timeline {
+        margin-top: 3em;
+        margin-bottom: 3em;
+      }
+      #cd-timeline::before {
+        left: 50%;
+        margin-left: -2px;
+      }
 
+      .cd-timeline-block {
+        margin: 4em 0;
+      }
+      .cd-timeline-block:first-child {
+        margin-top: 0;
+      }
+      .cd-timeline-block:last-child {
+        margin-bottom: 0;
+      }
+
+      .cd-timeline-img {
+        width: 30px;
+        height: 30px;
+        left: 50%;
+        margin-left: -15px;
+        margin-top: 15px;
+        /* Force Hardware Acceleration in WebKit */
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+      }
+
+
+      .cd-timeline-content {
+        color: white;
+        padding: 1.6em;
+        width: 40%;
+        margin: 0 5%
+      }
+      .cd-timeline-content::before {
+        top: 31px;
+        left: 100%;
+        border-color: transparent;
+        border-left-color: darken($primary-color, 10);
+      }
+      .cd-timeline-content .cd-date {
+        position: absolute;
+        width: 100%;
+        left: 122%;
+        top: 6px;
+        font-size: 16px;
+        font-size: 1rem;
+      }
+      .cd-timeline-block:nth-child(even) .cd-timeline-content {
+        animation: 1s ease-out 0s 1 slideInFromRight;
+        float: right;
+      }
+      .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+        top: 31px;
+        left: auto;
+        right: 100%;
+        border-color: transparent;
+        border-right-color:darken($primary-color, 10);
+      }
+      .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
+        float: right;
+      }
+      .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+        left: auto;
+        right: 122%;
+        text-align: right;
+      }
 }
 
 //Laptops
@@ -70,6 +139,11 @@
 
 //Smartphones
 @include mediaSm{
+
+    .timeline-content-info-title, .timeline-content-info-date {  
+        display: block;
+        width:100%;
+      } 
     
     main#home{
         margin-top: 10vh;

@@ -1,5 +1,6 @@
 $primary-color: #444;
-$secondary-color: #eece1a; 
+//$secondary-color: #eece1a; 
+$secondary-color: #f6c90e;
 
 
 @mixin easeOutEffect {
@@ -11,7 +12,7 @@ $secondary-color: #eece1a;
     @if (lightness($color) > 40){
         @return #000; 
     }@else{
-        @return #fff; 
+        @return #eeeeee; 
     }
 }
 
@@ -46,6 +47,15 @@ $secondary-color: #eece1a;
 @keyframes slideInFromLeft {
     0% {
       transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
     }
     100% {
       transform: translateX(0);
