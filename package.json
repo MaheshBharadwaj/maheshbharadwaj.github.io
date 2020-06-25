@@ -4,7 +4,7 @@
   "description": "My Personal Website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w ./scss/ -o ./dist/css/ --recurisve"
+    "sass": "node-sass -w ./scss/ -o ./css/ --recurisve"
   },
   "author": "Mahesh Bharadwaj K",
   "license": "MIT",

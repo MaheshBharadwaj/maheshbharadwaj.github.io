@@ -189,17 +189,13 @@ main {
 
 @media screen and (max-width: 768px) {
   main {
-    padding: 20px;
     align-items: center;
     text-align: center; }
     main #home {
       margin-top: 10vh; }
     main .lg-heading {
-      font-size: 4rem !important;
       line-height: 1;
       margin-bottom: 1rem; }
-    main .sm-heading {
-      font-size: 2rem !important; }
   ul.menu-nav,
   div.menu-branding {
     float: none;

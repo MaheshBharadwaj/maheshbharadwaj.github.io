@@ -12,6 +12,7 @@
 @include mediaMd{
 
     main{
+        padding: 20px;
         align-items: center;
         text-align: center;
         
@@ -20,8 +21,12 @@
         }
 
         .lg-heading{
+            font-size: 4rem !important;
             line-height: 1;
             margin-bottom: 1rem;
+        }
+        .sm-heading{
+            font-size: 2rem !important;
         }
     }
 
