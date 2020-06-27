@@ -211,12 +211,12 @@
     background: #2b2b2b;
     list-style: none;
     transform: translate3d(0, -100%, 0);
-    transition: all 1.5s ease-out; }
+    transition: all 0.75s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
     background: #373737;
-    transition: all 1.5s ease-out;
+    transition: all 0.75s ease-out;
     transform: translate3d(0, 100%, 0); }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
@@ -228,7 +228,7 @@
       border-radius: 50%; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
-    transition: all 1.5s ease-out; }
+    transition: all 0.75s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
@@ -241,21 +241,24 @@
     text-transform: uppercase;
     padding: 1rem 0;
     color: #eeeeee;
-    transition: all 1.5s ease-out; }
+    transition: all 0.75s ease-out; }
     .menu .nav-link:hover {
       color: #f6c90e; }
 
 .nav-item:nth-child(1) {
-  transition-delay: 0.15s; }
+  transition-delay: 0.07s; }
 
 .nav-item:nth-child(2) {
-  transition-delay: 0.3s; }
+  transition-delay: 0.14s; }
 
 .nav-item:nth-child(3) {
-  transition-delay: 0.45s; }
+  transition-delay: 0.21s; }
 
 .nav-item:nth-child(4) {
-  transition-delay: 0.6s; }
+  transition-delay: 0.28s; }
+
+.nav-item:nth-child(5) {
+  transition-delay: 0.35s; }
 
 .container {
   position: absolute;
@@ -298,6 +301,88 @@ h1 {
     font-weight: 700; }
   .contact-method:hover i {
     transform: translateY(-40px); }
+
+.github-cards {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 900px; }
+
+.github-card {
+  display: block;
+  background-color: #2b2b2b;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin: 10px;
+  color: #555;
+  text-decoration: none;
+  font-size: 13px;
+  flex: 1;
+  min-width: 250px;
+  border-radius: 5px;
+  padding-bottom: 10px; }
+  .github-card > h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px 5px 0 0;
+    background-color: #f6c90e;
+    margin-top: 0;
+    color: #eee;
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 15px; }
+  .github-card p {
+    padding: 10px;
+    color: whitesmoke; }
+
+.github-card__meta {
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px; }
+  .github-card__meta > i {
+    color: whitesmoke;
+    font-size: 16px; }
+
+body#error {
+  z-index: 4;
+  background-color: #444; }
+  body#error .mainbox {
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    position: relative; }
+  body#error .err {
+    color: #f6c90e;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position: absolute;
+    left: 20%;
+    top: 8%; }
+  body#error .far {
+    position: absolute;
+    font-size: 8.5rem;
+    left: 42%;
+    top: 18%;
+    color: #f6c90e; }
+  body#error .err2 {
+    color: #f6c90e;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 11rem;
+    position: absolute;
+    left: 68%;
+    top: 8%; }
+  body#error .msg {
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.6rem;
+    position: absolute;
+    left: 16%;
+    top: 45%;
+    width: 75%; }
+    body#error .msg a {
+      text-decoration: none;
+      color: #000; }
+  body#error a:hover {
+    text-decoration: underline; }
 
 * {
   box-sizing: border-box; }
@@ -344,7 +429,7 @@ main {
       padding: 10px; }
       main .icons a:hover {
         color: #f6c90e;
-        transition: all 1.5s ease-out; }
+        transition: all 0.75s ease-out; }
   main#home h1, main#about h1 {
     margin-top: 15vh; }
   main#home {
@@ -435,6 +520,8 @@ main {
       margin-bottom: 1rem; }
       main .lg-heading.contact {
         font-size: 2rem; }
+      main .lg-heading.project {
+        font-size: 1rem; }
     main .sm-heading {
       font-size: 2rem !important; }
   ul.menu-nav,

@@ -1,0 +1,53 @@
+$color-github:$secondary-color;
+$gray: #ccc;
+$text: #555;
+$spacing: 10px;
+
+.github-cards {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 900px;
+}
+
+.github-card {
+  display: block;
+  //background: #eeeeee;
+  background-color: darken($primary-color, 10);
+  box-sizing: border-box;
+  border: 1px solid $gray;
+  margin: $spacing;
+  color: $text;
+  text-decoration: none;
+  font-size: 13px;
+  flex: 1;
+  min-width: 250px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  > h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px 5px 0 0;
+    background-color: #f6c90e;
+    margin-top: 0;
+    color: #eee;
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 15px;
+  }
+
+  p{
+      padding: 10px;
+      color: whitesmoke;
+  }
+}
+
+.github-card__meta {
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  
+  > i {
+    color: whitesmoke;
+    font-size: 16px;
+  }
+}
