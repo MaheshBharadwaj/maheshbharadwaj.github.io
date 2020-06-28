@@ -453,3 +453,114 @@ textarea {
   .github-card__meta > i {
     color: whitesmoke;
     font-size: 16px; }
+
+@media screen and (min-width: 1171px) {
+  #cd-timeline {
+    margin-top: 3em;
+    margin-bottom: 3em; }
+  #cd-timeline::before {
+    left: 50%;
+    margin-left: -2px; }
+  .cd-timeline-block {
+    margin: 4em 0; }
+  .cd-timeline-block:first-child {
+    margin-top: 0; }
+  .cd-timeline-block:last-child {
+    margin-bottom: 0; }
+  .cd-timeline-img {
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: 15px;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden; }
+  .cd-timeline-content {
+    color: white;
+    padding: 1.6em;
+    width: 40%;
+    margin: 0 5%; }
+  .cd-timeline-content::before {
+    top: 31px;
+    left: 100%;
+    border-color: transparent;
+    border-left-color: #2b2b2b; }
+  .cd-timeline-content .cd-date {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: 6px;
+    font-size: 16px;
+    font-size: 1rem; }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    float: right; }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
+    top: 31px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: #2b2b2b; }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
+    float: right; }
+  .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
+    left: auto;
+    right: 122%;
+    text-align: right; } }
+
+@media screen and (min-width: 769px) and (max-width: 1170) {
+  .cd-timeline-content h2 {
+    font-size: 20px;
+    font-size: 1.25rem; }
+  .cd-timeline-content p {
+    font-size: 16px;
+    font-size: 1rem; }
+  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+    font-size: 14px;
+    font-size: 0.875rem; } }
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 20px;
+    align-items: center;
+    text-align: center; }
+    main #home {
+      margin-top: 10vh; }
+    main .lg-heading {
+      font-size: 4rem;
+      line-height: 1;
+      margin-bottom: 1rem; }
+      main .lg-heading.contact {
+        font-size: 2rem; }
+      main .lg-heading.project {
+        font-size: 1rem; }
+    main .sm-heading {
+      font-size: 2rem !important; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-nav {
+    height: 65vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 24px; }
+  .menu-branding {
+    height: 35vh;
+    transform: translate3d(100%, 0, 0); }
+  .about-info {
+    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-columns: 1fr; }
+  .contact-method span {
+    font-size: 10px; } }
+
+@media screen and (max-width: 500px) {
+  .timeline-content-info-title, .timeline-content-info-date {
+    display: block;
+    width: 100%; }
+  main#home {
+    margin-top: 10vh; } }
