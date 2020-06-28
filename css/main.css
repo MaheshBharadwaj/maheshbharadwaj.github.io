@@ -325,6 +325,7 @@ h1 {
     padding-left: 15px; }
   .github-card p {
     padding: 10px;
+    font-size: 15px;
     color: whitesmoke; }
 
 .github-card__meta {

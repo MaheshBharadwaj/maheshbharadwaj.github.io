@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
+    <link rel="stylesheet" href="css/project.css">
     <script src="https://kit.fontawesome.com/630ab55cd3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/icon2.png" type="image/x-icon">
     <title>Projects</title>
 </head>
+<!-- .wrapper
+  .scroll-list
+    .scroll-list__wrp.js-scroll-content.js-scroll-list
+      - for (i = 0; i <= 25; i++)
+        .scroll-list__item.js-scroll-list-item -->
 
 <body>
     <div id="particles-js-canvas-el"></div>
@@ -39,143 +44,148 @@
             </ul>
         </nav>
     </header>
+    <main id="project">
 
-
-    <main id="projects">
-        <h1 class="lg-heading project"> Completed <span class="text-secondary">Projects</span></h1>
+        <h1 class="lg-heading">Projects <span class="text-secondary">Completed</span></h1>
     </main>
-
-
-
-    <div class="github-cards">
-        <a href="https://github.com/Nexmo/nexmo-ruby" class="github-card" data-github="Nexmo/nexmo-ruby">
-          <h3>nexmo-ruby</h3>
-          <p>Nexmo REST API client for Ruby</p>
-          <span class="github-card__meta">
-            <span class="github-card__language-icon" style="color: #7A0410;">●</span> Ruby
-          </span>
-          <span class="github-card__meta">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <span data-stars>
-              <i class="fa fa-spinner" aria-hidden="true"></i>
-            </span>
-          </span>
-          <span class="github-card__meta">
-            <i class="fa fa-code-fork" aria-hidden="true"></i>
-            <span data-forks>
-              <i class="fa fa-spinner" aria-hidden="true"></i>
-            </span>
-          </span>
-        </a>
-      
-        <a href="https://github.com/Nexmo/nexmo-php" class="github-card" data-github="Nexmo/nexmo-php">
-          <h3>nexmo-php</h3>
-          <p>Nexmo REST API client for PHP</p>
-          <span class="github-card__meta">
-            <span class="github-card__language-icon" style="color: #4C5E99;">●</span> PHP
-          </span>
-          <span class="github-card__meta">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <span data-stars>
-              <i class="fa fa-spinner" aria-hidden="true"></i>
-            </span>
-          </span>
-          <span class="github-card__meta">
-            <i class="fa fa-code-fork" aria-hidden="true"></i>
-            <span data-forks>
-              <i class="fa fa-spinner" aria-hidden="true"></i>
-            </span>
-          </span>
-        </a>
-      
-        <a href="https://github.com/Nexmo/nexmo-python" class="github-card" data-github="Nexmo/nexmo-python">
-          <h3>nexmo-python</h3>
-          <p>Nexmo REST API client for Python</p>
-          <span class="github-card__meta">
-            <span class="github-card__language-icon" style="color: #3572A5;">●</span> Python
-          </span>
-          <span class="github-card__meta">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <span data-stars>
-              <i class="fa fa-spinner" aria-hidden="true"></i>
-            </span>
-          </span>
-          <span class="github-card__meta">
-            <i class="fa fa-code-fork" aria-hidden="true"></i>
-            <span data-forks>
-              <i class="fa fa-spinner" aria-hidden="true"></i>
-            </span>
-          </span>
-        </a>
-      
-        <a href="https://github.com/Nexmo/nexmo-dotnet" class="github-card" data-github="Nexmo/nexmo-dotnet">
-          <h3>nexmo-dotnet</h3>
-          <p>Nexmo REST API client for .NET</p>
-          <span class="github-card__meta">
-            <span class="github-card__language-icon" style="color: #178600;">●</span> C#
-          </span>
-          <span class="github-card__meta">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <span data-stars>
-              <i class="fa fa-spinner" aria-hidden="true"></i>
-            </span>
-          </span>
-          <span class="github-card__meta">
-            <i class="fa fa-code-fork" aria-hidden="true"></i>
-            <span data-forks>
-              <i class="fa fa-spinner" aria-hidden="true"></i>
-            </span>
-          </span>
-        </a>
-      
-        <a href="https://github.com/Nexmo/nexmo-node" class="github-card" data-github="Nexmo/nexmo-node">
-          <h3>nexmo-node</h3>
-          <p>Nexmo REST API client for Node.js</p>
-          <span class="github-card__meta">
-            <span class="github-card__language-icon" style="color: #F1E05A;">●</span> JavaScript
-          </span>
-          <span class="github-card__meta">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <span data-stars>
-              <i class="fa fa-spinner" aria-hidden="true"></i>
-            </span>
-          </span>
-          <span class="github-card__meta">
-            <i class="fa fa-code-fork" aria-hidden="true"></i>
-            <span data-forks>
-              <i class="fa fa-spinner" aria-hidden="true"></i>
-            </span>
-          </span>
-        </a>
-      
-        <a href="https://github.com/Nexmo/nexmo-java" class="github-card" data-github="Nexmo/nexmo-java">
-          <h3>nexmo-java</h3>
-          <p>Nexmo REST API client for Java</p>
-          <span class="github-card__meta">
-            <span class="github-card__language-icon" style="color: #B07219;">●</span> Java
-          </span>
-          <span class="github-card__meta">
-            <i class="fa fa-star" aria-hidden="true"></i>
-            <span data-stars>
-              <i class="fa fa-spinner" aria-hidden="true"></i>
-            </span>
-          </span>
-          <span class="github-card__meta">
-            <i class="fa fa-code-fork" aria-hidden="true"></i>
-            <span data-forks>
-              <i class="fa fa-spinner" aria-hidden="true"></i>
-            </span>
-          </span>
-        </a>
-      </div>
-
+    <div class="wrapper">
+        <div class="scroll-list">
+            <div class="scroll-list__wrp js-scroll-content js-scroll-list">
+                <div class="scroll-list__item js-scroll-list-item">
+                    <a href="https://github.com/MaheshBharadwaj/LinuxAdmin" class="github-card" data-github="MaheshBharadwaj/LinuxAdmin">
+                        <h3>Linux Admin Basics</h3>
+                        <p>How to use basic Linux system administration tools.</p>
+                        <span class="github-card__meta">
+                            <span class="github-card__language-icon" style="color: #dddddd;">●</span> bash
+                        </span>
+                        <span class="github-card__meta">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span data-stars>
+                                <i class="fa fa-spinner" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                        <span class="github-card__meta">
+                            <i class="fa fa-code-fork" aria-hidden="true"></i>
+                            <span data-forks>
+                                <i class="fa fa-spinner" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="scroll-list__item js-scroll-list-item">
+                    <a href="https://github.com/MaheshBharadwaj/FlightDelayPrediction" class="github-card"  data-github="MaheshBharadwaj/FlightDelayPrediction">
+                        <h3>Flight Delay Prediction</h3>
+                        <p>Two stage model to predict if a flight is delayed and if so, the amount of delay in minutes.
+                        </p>
+                        <span class="github-card__meta">
+                            <span class="github-card__language-icon" style="color: #3572A5;">●</span> Python
+                        </span>
+                        <span class="github-card__meta">
+                            <span class="github-card__language-icon" style="color: orangered;">●</span> Scikit-Learn
+                        </span>
+                        <span class="github-card__meta">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span data-stars>
+                                <i class="fa fa-spinner" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                        <span class="github-card__meta">
+                            <i class="fa fa-code-fork" aria-hidden="true"></i>
+                            <span data-forks>
+                                <i class="fa fa-spinner" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="scroll-list__item js-scroll-list-item">
+                    <a href="https://github.com/MaheshBharadwaj/Encryption" class="github-card"  data-github="MaheshBharadwaj/Encryption">
+                        <h3>Real Time Encryption</h3>
+                        <p>Program that emulates end to end encryption by using dynamic running key cipher.</p>
+                        <span class="github-card__meta">
+                            <span class="github-card__language-icon" style="color: cyan;">●</span> C++
+                        </span>
+                        <span class="github-card__meta">
+                            <span class="github-card__language-icon" style="color: indigo;">●</span> Win32 API
+                        </span>
+                        <span class="github-card__meta">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span data-stars>
+                                <i class="fa fa-spinner" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                        <span class="github-card__meta">
+                            <i class="fa fa-code-fork" aria-hidden="true"></i>
+                            <span data-forks>
+                                <i class="fa fa-spinner" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="scroll-list__item js-scroll-list-item">
+                    <a href="https://github.com/MaheshBharadwaj/AndroidApps" class="github-card"  data-github="MaheshBharadwaj/AndroidApps">
+                        <h3>Android Apps</h3>
+                        <p>Repository for android apps including a weekly expense tracker</p>
+                        <span class="github-card__meta">
+                            <span class="github-card__language-icon" style="color:navy;">●</span> Dart
+                        </span>
+                        <span class="github-card__meta">
+                            <span class="github-card__language-icon" style="color: palevioletred;">●</span> Flutter SDK
+                        </span>
+                        <span class="github-card__meta">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span data-stars>
+                                <i class="fa fa-spinner" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                        <span class="github-card__meta">
+                            <i class="fa fa-code-fork" aria-hidden="true"></i>
+                            <span data-forks>
+                                <i class="fa fa-spinner" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="scroll-list__item js-scroll-list-item">
+                    <a href="https://github.com/MaheshBharadwaj/AlgorithmAnalysis" class="github-card"  data-github="MaheshBharadwaj/AlgorithmAnalysis">
+                        <h3>Algorithms for Python</h3>
+                        <p>Implementation of several important algorithms in python</p>
+                        <span class="github-card__meta">
+                            <span class="github-card__language-icon" style="color: #3572A5;">●</span> Python
+                        <span class="github-card__meta">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span data-stars>
+                                <i class="fa fa-spinner" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                        <span class="github-card__meta">
+                            <i class="fa fa-code-fork" aria-hidden="true"></i>
+                            <span data-forks>
+                                <i class="fa fa-spinner" aria-hidden="true"></i>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer id="main-footer">
+        Copyright &copy; 2020
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/github.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/smooth-scrollbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/plugins/overscroll.js"></script>
+    <script src="js/project.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
+
     <script>
-        particlesJS.load('particles-js-canvas-el', '../particle/particles.json', function () {
+        particlesJS.load('particles-js-canvas-el', 'particle/particles.json', function () {
             console.log('\"callback - particles.js config loaded!\"');
         });
     </script>
 </body>
+
+
+</html>
