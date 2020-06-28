@@ -282,7 +282,7 @@ textarea {
     margin-top: 24px
   }
   
-  h3 {
+  h2 {
     position: absolute;
     left: 48px; top: 48px;
     max-width: 600px;
@@ -316,7 +316,6 @@ textarea {
     align-items: stretch;
     width: 100%;    
     height: auto;
-    padding: 1em;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.7);    
     margin-bottom: 1rem;
     //cursor: pointer;
@@ -341,7 +340,7 @@ textarea {
     
     &:hover {
       color: rgba(#fff, 0.75);
-      box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.7);
+      box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.7);
     }
     
     .image {
@@ -419,7 +418,6 @@ textarea {
 
     @media screen and (max-width: 768px) {
       margin-bottom: 12px;
-      padding: 12px;
     }
     @media screen and (max-width: 480px) {
       flex-direction: column;
@@ -454,4 +452,60 @@ textarea {
   padding: 1rem;
   color: set-text-color($primary-color);
   height: 60px;
+}
+
+$color-github:$secondary-color;
+$gray: #ccc;
+$text: #555;
+$spacing: 10px;
+
+.github-cards {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  width: 900px;
+}
+
+.github-card {
+  display: block;
+  //background: #eeeeee;
+  background-color: darken($primary-color, 5);
+  box-sizing: border-box;
+  color: $text;
+  text-decoration: none;
+  font-size: 13px;
+  flex: 1;
+  min-width: 250px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  > h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px 5px 0 0;
+    margin-top: 0;
+    color:#f6c90e;
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-top: 10px;
+    border-radius: 5px;
+
+  }
+
+  p{
+      padding: 10px;
+      padding-left: 15px !important;
+      font-size: 15px;
+      color: whitesmoke;
+  }
+}
+
+.github-card__meta {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+  > i {
+    color: whitesmoke;
+    font-size: 16px;
+  }
 }
