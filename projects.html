@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css/project.css">
     <script src="https://kit.fontawesome.com/630ab55cd3.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/project.css">
+
     <link rel="icon" href="img/icon2.png" type="image/x-icon">
     <title>Projects</title>
 </head>
-<!-- .wrapper
-  .scroll-list
-    .scroll-list__wrp.js-scroll-content.js-scroll-list
-      - for (i = 0; i <= 25; i++)
-        .scroll-list__item.js-scroll-list-item -->
 
 <body>
     <div id="particles-js-canvas-el"></div>
+
     <header>
         <div class="menu-btn">
-            <i class="fas fa-bars fa-2x"></i>
+            <i class="fas fa-bars fa-2x" style="color: white;"></i>
         </div>
-        <nav class="menu">
+        <div class="menu">
             <div class="menu-branding">
                 <div class="portrait"></div>
             </div>
@@ -42,206 +41,37 @@
                     <a href="contact.html" class="nav-link">How to Reach Me</a>
                 </li>
             </ul>
-        </nav>
+        </div>
     </header>
-    <main id="project">
-
+    <main>
         <h1 class="lg-heading">Projects <span class="text-secondary">Completed</span></h1>
     </main>
-    <div class="wrapper">
-        <div class="scroll-list">
-            <div class="scroll-list__wrp js-scroll-content js-scroll-list">
-                <div class="scroll-list__item js-scroll-list-item">
-                    <a href="https://github.com/MaheshBharadwaj/LinuxAdmin" class="github-card" data-github="MaheshBharadwaj/LinuxAdmin">
-                        <h3>Linux Admin Basics</h3>
-                        <p>How to use basic Linux system administration tools.</p>
-                        <span class="github-card__meta">
-                            <span class="github-card__language-icon" style="color: #dddddd;">●</span> bash
-                        </span>
-                        <span class="github-card__meta">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <span data-stars>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                        <span class="github-card__meta">
-                            <i class="fa fa-code-fork" aria-hidden="true"></i>
-                            <span data-forks>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="scroll-list__item js-scroll-list-item">
-                    <a href="https://github.com/MaheshBharadwaj/FlightDelayPrediction" class="github-card"  data-github="MaheshBharadwaj/FlightDelayPrediction">
-                        <h3>Flight Delay Prediction</h3>
-                        <p>Two stage model to predict if a flight is delayed and if so, the amount of delay in minutes.
-                        </p>
-                        <span class="github-card__meta">
-                            <span class="github-card__language-icon" style="color: #3572A5;">●</span> Python
-                        </span>
-                        <span class="github-card__meta">
-                            <span class="github-card__language-icon" style="color: orangered;">●</span> Scikit-Learn
-                        </span>
-                        <span class="github-card__meta">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <span data-stars>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                        <span class="github-card__meta">
-                            <i class="fa fa-code-fork" aria-hidden="true"></i>
-                            <span data-forks>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="scroll-list__item js-scroll-list-item">
-                    <a href="https://github.com/MaheshBharadwaj/maheshbharadwaj.github.io" class="github-card"  data-github="MaheshBharadwaj/maheshbharadwaj.github.io">
-                        <h3>MaheshBharadwaj.github.io</h3>
-                        <p>Repository contains the source code for this website
-                        </p>
 
-                        <span class="github-card__meta">
-                            <span class="github-card__language-icon" style="color: #1c9906;">●</span> CSS3
-                        </span>
-                        <span class="github-card__meta">
-                            <span class="github-card__language-icon" style="color: #0615bf;">●</span> Javascript
-                        </span>
-                        <span class="github-card__meta">
-                            <span class="github-card__language-icon" style="color: orangered;">●</span> HTML5
-                        </span>
-                        <span class="github-card__meta">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <span data-stars>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                        <span class="github-card__meta">
-                            <i class="fa fa-code-fork" aria-hidden="true"></i>
-                            <span data-forks>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="scroll-list__item js-scroll-list-item">
-                    <a href="https://github.com/MaheshBharadwaj/paneka" class="github-card"  data-github="MaheshBharadwaj/paneka">
-                        <h3>Paneka - The discord football stats bot</h3>
-                        <p>Source code for the bot which is currently hosted on heroku<br>
-                            Invite the bot using link in the repository!
-                        </p>
-
-                        <span class="github-card__meta">
-                            <span class="github-card__language-icon" style="color: #3572A5;">●</span> python
-                        </span>
-                        <span class="github-card__meta">
-                            <span class="github-card__language-icon" style="color: orangered;">●</span> discord.py
-                        </span>
-                        <span class="github-card__meta">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <span data-stars>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                        <span class="github-card__meta">
-                            <i class="fa fa-code-fork" aria-hidden="true"></i>
-                            <span data-forks>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="scroll-list__item js-scroll-list-item">
-                    <a href="https://github.com/MaheshBharadwaj/Encryption" class="github-card"  data-github="MaheshBharadwaj/Encryption">
-                        <h3>Real Time Encryption</h3>
-                        <p>Program that emulates end to end encryption by using dynamic running key cipher.</p>
-                        <span class="github-card__meta">
-                            <span class="github-card__language-icon" style="color: cyan;">●</span> C++
-                        </span>
-                        <span class="github-card__meta">
-                            <span class="github-card__language-icon" style="color: indigo;">●</span> Win32 API
-                        </span>
-                        <span class="github-card__meta">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <span data-stars>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                        <span class="github-card__meta">
-                            <i class="fa fa-code-fork" aria-hidden="true"></i>
-                            <span data-forks>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="scroll-list__item js-scroll-list-item">
-                    <a href="https://github.com/MaheshBharadwaj/AndroidApps" class="github-card"  data-github="MaheshBharadwaj/AndroidApps">
-                        <h3>Android Apps</h3>
-                        <p>Repository for android apps including a weekly expense tracker</p>
-                        <span class="github-card__meta">
-                            <span class="github-card__language-icon" style="color:navy;">●</span> Dart
-                        </span>
-                        <span class="github-card__meta">
-                            <span class="github-card__language-icon" style="color: palevioletred;">●</span> Flutter SDK
-                        </span>
-                        <span class="github-card__meta">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <span data-stars>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                        <span class="github-card__meta">
-                            <i class="fa fa-code-fork" aria-hidden="true"></i>
-                            <span data-forks>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="scroll-list__item js-scroll-list-item">
-                    <a href="https://github.com/MaheshBharadwaj/Algorithm-Analysis" class="github-card"  data-github="MaheshBharadwaj/Algorithm-Analysis">
-                        <h3>Algorithms for Python</h3>
-                        <p>Implementation of several important algorithms in python</p>
-                        <span class="github-card__meta">
-                            <span class="github-card__language-icon" style="color: #3572A5;">●</span> Python
-                        <span class="github-card__meta">
-                            <i class="fa fa-star" aria-hidden="true"></i>
-                            <span data-stars>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                        <span class="github-card__meta">
-                            <i class="fa fa-code-fork" aria-hidden="true"></i>
-                            <span data-forks>
-                                <i class="fa fa-spinner" aria-hidden="true"></i>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                
-            </div>
+    <div class="container">
+        <div class="row">
+            <div id="root"></div>
         </div>
     </div>
+
     <footer id="main-footer">
         Copyright &copy; 2020
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/github.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/smooth-scrollbar.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/plugins/overscroll.js"></script>
-    <script src="js/project.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
+
+
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel" src="js/project-data.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
     <script>
-        particlesJS.load('particles-js-canvas-el', 'particle/particles.json', function () {
+        particlesJS.load('particles-js-canvas-el', '../particle/particles.json', function () {
             console.log('\"callback - particles.js config loaded!\"');
         });
     </script>
 </body>
-
-
-</html>
