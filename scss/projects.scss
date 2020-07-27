@@ -1,0 +1,276 @@
+@import 'config';
+
+body{
+  background:$primary-color;
+}
+
+main{
+
+  z-index: 2;
+  padding: 4rem 4rem 0 4rem;
+ 
+  h1{
+    margin-top: 5px;
+  }
+}
+
+h1,h2,h3{
+  margin: 0;
+  font-weight: 400;
+  &.lg-heading{
+      color:#dddddd;
+      font-size: 6rem;
+
+      @media screen and (max-width: 768px){
+        font-size: 2rem;
+        margin-top: 5vh;
+      }
+  }
+
+  &.sm-heading{
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      padding: 0.2rem 1rem;
+      background: rgba(lighten($primary-color, 2), 5);
+  }
+}
+
+.text-secondary{
+  font-weight: 300;
+  color: $secondary-color;
+}
+
+.container{
+  margin-top: 1rem;
+  z-index: 100;
+}
+
+#title {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  
+  .icon {
+    font-size: .9rem;
+    display: inline-flex;
+    background: #D8D8D8;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    span {
+      border-radius: 5px;
+      padding: 3px 5px;
+    };
+  }
+  
+  .tensorflow {
+    background: #BAD5F5;
+    span::after {
+      content: "TensorFlow";
+    }
+  }
+
+  .win {
+    background: #BAD5F5;
+    span::after {
+      content: " Win32API";
+    }
+  }
+  
+  .discord-py {
+    background: #F2C986;
+    span::after {
+      content: "Discord.py";
+    }
+  }
+  
+  .CSS {
+    background: #ffb1b1;
+    span::after {
+      content: "CSS";
+    }
+  }
+
+  .latex {
+    background: #ffb1b1;
+    span::after {
+      content: "LaTeX";
+    }
+  }
+
+  .CPP{
+    background: #d9d1ff;
+    span::after{
+      content: "C++";
+    }
+  }
+  
+  .javascript{
+    background: #d9d1ff;
+    span::after{
+      content: "JavaScript";
+    }
+  }
+
+  .HTML {
+    background: 	#fff3aa;
+    span::after {
+      content: "HTML";
+    }
+  }
+  
+  .python {
+    background: #AFEAE5;
+    span::after {
+      content: "Python";
+    }
+  }
+
+  .bash {
+    background: #AFEAE5;
+    span::after {
+      content: "Bash";
+    }
+  }
+  
+  .card {
+    max-width: 305px;
+    a {
+      padding-right: 15px;
+    } 
+    img{
+      max-height: 177px;
+    }
+  }
+  
+  .github {
+    color: #739150;
+  }
+  
+  .status {
+    color: #7699C2;
+  }
+
+
+.menu-btn{
+  position: absolute;
+  z-index: 5;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+}
+
+.menu{
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.95;
+  visibility: hidden;
+
+  &.show{
+      visibility: visible;
+  }
+
+  &-branding, &-nav{
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      width: 50%;
+      height: 100vh;
+      overflow: hidden;
+  }
+
+  &-nav{
+      margin: 0;
+      padding: 0;
+      background: darken($primary-color, 10);
+      list-style: none;
+      transform: translate3d(0, -100%, 0);
+      @include easeOutEffect;
+
+      &.show{
+          transform: translate3d(0, 0, 0);
+      }
+  }
+
+  &-branding{
+      background: darken($primary-color, 5);
+      @include easeOutEffect;
+      transform: translate3d(0, +100%, 0);
+
+      &.show{
+          transform: translate3d(0, 0, 0);
+      }
+
+      .portrait{
+          height: 250px;
+          width: 250px; 
+          background: url('../img/mahesh-portrait.jpg');
+          border: 3px solid $secondary-color;
+          border-radius: 50%;
+      }
+  }
+
+  .nav-item{
+      transform: translate3d(600px, 0, 0);
+      @include easeOutEffect;
+      &.show{
+          transform: translate3d(0, 0, 0);
+      }
+
+      &.current > a{
+          color: $secondary-color;
+      }
+  }
+
+  .nav-link{
+      position: relative;
+      display: inline-block;
+      font-size: 30px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding: 1rem 0;
+      color:set-text-color($primary-color);
+      @include easeOutEffect;
+
+      &:hover{
+          color: $secondary-color;
+      }
+
+  }
+}
+
+
+//Change if number of nav items increases/decreases
+@for $i from 1 through 5{
+  .nav-item:nth-child(#{$i}){
+      transition-delay: $i * 0.07s;
+  }
+}
+
+#particles-js-canvas-el{
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+#main-footer{
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background: darken($primary-color, 10);
+  margin: 0;
+  padding: 1rem;
+  color: set-text-color($primary-color);
+  height: 60px;
+
+  &.about{
+      position: relative;
+  }
+}
+
+@import 'mobile';

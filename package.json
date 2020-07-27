@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass": "node-sass -w ./scss/ -o ./css/ --recurisve",
-    "sass2": "node-sass -w scss/project-beta.scss css/project.css"
+    "sass2": "node-sass -w scss/projects.scss css/project.css",
+    "sass3": "node-sass -w scss/project-old.scss css/project2.css"
   
   },
   "author": "Mahesh Bharadwaj K",
