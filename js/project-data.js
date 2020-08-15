@@ -42,12 +42,12 @@ const data = [
     "status": "Completed - 2018"
   },
   {
-    "project": "Connect 4",
+    "project": "Sudoku Solver",
     "stack": [["python", "fab fa-python"], ["tensorflow", "fas fa-code-branch"]],
-    "description": "Creating an AI capable of playing Connect Four against a human",
-    "github": "https://www.github.com/MaheshBharadwaj/ConnectFour",
-    "image": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/326643/sample%20logo%202.png",
-    "status": "Ongoing"
+    "description": "Extract sudoku from images using ConvNets after pre-processsing using OpenCV, allows user to solve the extracted sudoku or view the solution",
+    "github": "https://www.github.com/MaheshBharadwaj/Sudoku",
+    "image": "img/projects/sudoku.jpg",
+    "status": "Completed-2020"
   }
  ];
 
