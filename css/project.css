@@ -109,11 +109,15 @@ h1, h2, h3 {
     content: "Bash"; }
 
 .card {
-  max-width: 305px; }
+  max-width: 320px; }
   .card a {
     padding-right: 15px; }
   .card img {
-    max-height: 177px; }
+   height: 171px; }
+
+.card .card-content .card-title{
+  font-size: 18px;
+}
 
 .github {
   color: #739150; }

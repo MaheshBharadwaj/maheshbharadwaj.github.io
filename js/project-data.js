@@ -1,21 +1,30 @@
 // Dummy data placeholder. Replace with array of actual data objects to come from Airtable 
 const data = [
   {
+    "project": "Sign Language Translation",
+    "stack": [["python", "fab fa-python"], ["tensorflow", "fas fa-code-branch"]],
+    "description": "Worked with a team to  introduced a novel architecture called Multi Context Transformer which is an extension of Transformers with focus on increasing context specific features to perform the task of SLT.",
+    "github": "https://github.com/MBadriNarayanan/MultiContextTransformer",
+    "image": "img/projects/asl.jpg",
+    "status": "Completed - 2021"
+  },
+  {
+    "project": "Tweet Sentiment Classification",
+    "stack":  [["python", "fab fa-python"], ["tensorflow", "fas fa-code-branch"]],
+    "description": "Classifying the sentiment of tweets into 5 classes using various transformer architectures. Final Assessment for Natural Language Processing Course by Dr Sowmya Sundaram.",
+    "github": "https://github.com/MaheshBharadwaj/TweetSentimentClassification",
+    "image": "img/projects/tweet.jpg",
+    "status": "Completed - 2021"
+  },
+  {
     "project": "Paneka - Discord Bot",
     "stack": [["python", "fab fa-python"], ["discord-py", "fab fa-discord"]],
     "description": "Displays real-time standings and fixtures of major teams and leagues in the world of football",
     "github": "https://www.github.com/MaheshBharadwaj/paneka",
     "image": "img/projects/bot.png",
-    "status": "Beta Stage"
-  },
-  {
-    "project": "Delay Prediction",
-    "stack": [["python", "fab fa-python"], ["tensorflow", "fas fa-code-branch"]],
-    "description": "Two stage machine learning model to predict if a flight will be delayed, and if so, the delay in minutes",
-    "github": "https://www.github.com/MaheshBharadwaj/FlightDelayPrediction",
-    "image": "img/projects/flight.jpg",
     "status": "Completed - 2020"
   },
+ 
   {
     "project": "Personal Website",
     "stack": [["HTML", "fab fa-html5"], ["CSS", "fab fa-css3-alt"], ["javascript","fab fa-js-square"]],
@@ -32,15 +41,7 @@ const data = [
     "image": "img/projects/shell.jpg",
     "status": "Constantly Updated"
   },
-  {
-    "project": "End-End Encryption",
-    "stack": [["CPP", "fab fa-cuttlefish"], ["win","fab fa-windows"]],
-    "description": "Real-time End-to-End encryption using a dynamic running key cipher for file transfer betweent two peers, emulated on a single system",
-    "github": "https://www.github.com/MaheshBharadwaj/Encryption",
-    "image": "img/projects/enc.jpg",
-    "needs": "People with super powers",
-    "status": "Completed - 2018"
-  },
+
   {
     "project": "Sudoku Solver",
     "stack": [["python", "fab fa-python"], ["tensorflow", "fas fa-code-branch"]],
@@ -53,7 +54,11 @@ const data = [
 
 function Layout(props){
   return(
-      <div className="row">{props.children}</div>
+      <div>
+        <div className="row">
+         {props.children}
+         </div>
+        </div>
     )
 }
  
